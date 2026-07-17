@@ -709,3 +709,329 @@ Características:
 | **Redundância** | Existência de componentes de reserva para evitar interrupções. |
 | **Porta de Comunicação** | Identificador utilizado pelos serviços para receber conexões específicas. |
 | **Conectividade** | Capacidade de um dispositivo atender várias conexões simultaneamente. |
+
+# Aula 3 — Componentes de Redes
+
+## Objetivo da aula
+
+Compreender quais são os principais componentes de uma rede de computadores, suas funções e como eles são representados em projetos e documentações de redes.
+
+---
+
+# 1. Componentes de uma Rede
+
+Uma rede de computadores é formada por **três categorias principais** de componentes:
+
+1. **Dispositivos Finais**
+2. **Dispositivos Intermediários**
+3. **Meios Físicos**
+
+Cada categoria possui uma função específica para que a comunicação entre os dispositivos ocorra corretamente.
+
+---
+
+# 2. Representação em Diagramas de Rede
+
+Em projetos de redes, utiliza-se uma **simbologia padronizada** para representar cada equipamento.
+
+Esses diagramas permitem visualizar:
+
+- como os dispositivos estão conectados;
+- o caminho percorrido pelos dados;
+- os equipamentos presentes na infraestrutura;
+- a organização da rede.
+
+> **Importante:** A simbologia pode variar de acordo com o fabricante (Cisco, MikroTik, Huawei, etc.), mas a função de cada equipamento permanece a mesma.
+
+---
+
+# 3. Dispositivos Finais (Hosts)
+
+Os **dispositivos finais** são aqueles que iniciam ou recebem uma comunicação na rede.
+
+São chamados de **Hosts**, pois estão localizados nas extremidades da comunicação.
+
+### Definição
+
+Um **Host** é qualquer dispositivo conectado à rede capaz de enviar e/ou receber informações.
+
+---
+
+## Exemplos de Hosts
+
+- Computadores
+- Notebooks
+- Smartphones
+- Tablets
+- Impressoras de rede
+- Servidores
+- Smart TVs
+- Câmeras IP
+- Dispositivos IoT
+- Consoles de videogame
+
+Todos esses equipamentos podem participar do processo de comunicação.
+
+---
+
+## Identificação de um Host
+
+Para que um Host possa participar da rede, ele precisa ser identificado.
+
+Essa identificação permite que outros dispositivos saibam para onde enviar as informações.
+
+### Exemplo
+
+Em redes TCP/IP, essa identificação é feita por meio do:
+
+- **Endereço IP (Internet Protocol)**
+
+O endereço IP funciona como o "endereço" do dispositivo dentro da rede.
+
+Sem um identificador, um Host não pode participar corretamente da comunicação.
+
+---
+
+## Função dos Hosts
+
+Os Hosts são responsáveis por:
+
+- iniciar comunicações;
+- receber informações;
+- executar aplicações;
+- consumir ou fornecer serviços.
+
+Dependendo da situação, um Host pode atuar como:
+
+- Cliente;
+- Servidor;
+- Ambos (em aplicações P2P).
+
+---
+
+# 4. Dispositivos Intermediários
+
+Os **dispositivos intermediários** são responsáveis por conectar os Hosts entre si e encaminhar os dados pela rede.
+
+Eles não são o destino final da comunicação, mas fazem com que as informações cheguem corretamente ao destinatário.
+
+---
+
+## Principais funções
+
+- Interligar dispositivos.
+- Encaminhar pacotes.
+- Controlar o tráfego da rede.
+- Ampliar a cobertura da rede.
+- Permitir a comunicação entre diferentes segmentos.
+
+---
+
+## Exemplos
+
+### Switch
+
+Conecta diversos dispositivos dentro da mesma rede local (LAN).
+
+```text
+Computador
+      │
+      ▼
+   Switch
+      │
+ ┌────┴────┐
+ │         │
+PC      Impressora
+```
+
+---
+
+### Roteador (Router)
+
+Conecta redes diferentes.
+
+O exemplo mais comum é conectar a rede da sua casa à Internet.
+
+```text
+Internet
+     │
+     ▼
+ Roteador
+     │
+ ┌───┴────┐
+ │        │
+PC     Celular
+```
+
+---
+
+### Access Point (AP)
+
+Permite que dispositivos sem fio (Wi-Fi) acessem a rede.
+
+```text
+Notebook )))))
+             \
+          Access Point
+               │
+            Switch
+```
+
+---
+
+# Diferença entre os dispositivos intermediários
+
+| Equipamento | Função principal |
+|-------------|------------------|
+| **Switch** | Conecta dispositivos dentro da mesma rede local. |
+| **Roteador** | Conecta redes diferentes e encaminha os dados entre elas. |
+| **Access Point** | Fornece acesso à rede por meio do Wi-Fi. |
+
+---
+
+# 5. Meios Físicos
+
+Os **meios físicos** são os canais utilizados para transportar os dados entre os dispositivos da rede.
+
+É por meio deles que a comunicação realmente acontece.
+
+---
+
+## Principais tipos
+
+### Cabo de cobre
+
+Utiliza sinais elétricos para transportar informações.
+
+Exemplo:
+
+- Cabo de rede Ethernet (UTP).
+
+---
+
+### Fibra óptica
+
+Utiliza pulsos de luz.
+
+Vantagens:
+
+- Alta velocidade;
+- Longas distâncias;
+- Baixa interferência eletromagnética.
+
+É muito utilizada pelos provedores de Internet.
+
+---
+
+### Radiofrequência
+
+Utiliza ondas de rádio para transmitir informações.
+
+Exemplos:
+
+- Wi-Fi;
+- Bluetooth;
+- Redes móveis (4G e 5G).
+
+Sua principal vantagem é eliminar a necessidade de cabos.
+
+---
+
+# Comparação dos meios físicos
+
+| Meio físico | Tipo de sinal | Exemplo |
+|-------------|---------------|----------|
+| Cabo de cobre | Sinais elétricos | Ethernet (UTP) |
+| Fibra óptica | Pulsos de luz | Backbone de provedores |
+| Radiofrequência | Ondas de rádio | Wi-Fi, Bluetooth, 4G e 5G |
+
+---
+
+# Como ocorre a comunicação
+
+Durante uma comunicação, os três componentes trabalham juntos.
+
+Exemplo:
+
+```text
+Notebook (Host)
+        │
+        │ Wi-Fi
+        ▼
+Access Point
+        │
+        ▼
+Switch
+        │
+        ▼
+Roteador
+        │
+        │ Fibra óptica
+        ▼
+Internet
+        │
+        ▼
+Servidor (Host)
+```
+
+Observe que:
+
+- O **Notebook** e o **Servidor** são **Hosts**.
+- O **Access Point**, o **Switch** e o **Roteador** são **dispositivos intermediários**.
+- O **Wi-Fi** e a **Fibra Óptica** são os **meios físicos** utilizados para transportar os dados.
+
+---
+
+# Resumo da Aula
+
+Uma rede é composta por três elementos fundamentais:
+
+## 1. Dispositivos Finais (Hosts)
+
+São os equipamentos que enviam ou recebem informações.
+
+Exemplos:
+
+- Computadores;
+- Smartphones;
+- Servidores;
+- Impressoras;
+- IoT.
+
+---
+
+## 2. Dispositivos Intermediários
+
+São responsáveis por conectar os Hosts e encaminhar os dados.
+
+Exemplos:
+
+- Switch;
+- Roteador;
+- Access Point.
+
+---
+
+## 3. Meios Físicos
+
+São os canais utilizados para transportar as informações.
+
+Exemplos:
+
+- Cabo de cobre;
+- Fibra óptica;
+- Radiofrequência.
+
+---
+
+# Conceitos Importantes
+
+| Conceito | Definição |
+|----------|-----------|
+| **Host** | Dispositivo final capaz de enviar e receber informações na rede. |
+| **Endereço IP** | Identificador de um Host em uma rede TCP/IP. |
+| **Dispositivo Intermediário** | Equipamento que conecta Hosts e encaminha os dados. |
+| **Switch** | Interliga dispositivos dentro da mesma rede local. |
+| **Roteador** | Conecta redes diferentes e encaminha o tráfego entre elas. |
+| **Access Point (AP)** | Permite que dispositivos sem fio acessem a rede. |
+| **Meio Físico** | Canal utilizado para transportar os dados entre dispositivos. |
