@@ -1035,3 +1035,439 @@ Exemplos:
 | **Roteador** | Conecta redes diferentes e encaminha o tráfego entre elas. |
 | **Access Point (AP)** | Permite que dispositivos sem fio acessem a rede. |
 | **Meio Físico** | Canal utilizado para transportar os dados entre dispositivos. |
+
+# Tema 4 - Classificação das redes
+
+Abragencia das redes: Desde a rede domestica até a rede mundial(internet)
+Redes domesticas Terminais de usuario e dispositivos smart
+Redes residenciais:SOHO (Small Office/ Home Office)
+Rede mundial: WWW (World Wide Web)
+
+Classificação usual: Redes locais, LAN - Local Area Network e redes de grande abrangencia geografica WAN - Wide Area Network
+
+Acesso a internet: ISP (Internet Service Provide) no final voce como usuario utiliza um provedor que se conectam entre si.
+
+
+Carateristicas da rede LAN: Conexão dos dispositivos finais em area limitada como em escolas, residencias, escritorios, industrias, campus...etc. São utilizados dispositivos intermediarios como switchs e acess point. Redes corporativas são admistrada por uma unica corporação e redes residenciais por um unico individuo e utilizam largura de banda de alta velocidade como 1gbps.
+
+Carcteristicas da rede WAN: É uma interconexão das redes LAN de uma forma publica.O acesso a WAN e feito atraves de um provedor de acesso a internet(ISP) ou empressas de telecomunicações. Tem a taxa de transmissão menorque a rede LAN pois altas taxas de transmissão geram mais custo, no trafego corporativo temos servidores internos com menor demanda WAN pois a maioria das demandas já estão em rede local e servidores internos e na rsidencial temos maior demanda e pode apresentar gargalo de trafego  pois a maior demanda e de conexão a WAN.O dispositivo responsavel por conectar a rede LAN e WAN e o Roteador.
+
+# Aula 4 — Classificação das Redes
+
+## Objetivo da aula
+
+Compreender como as redes de computadores são classificadas de acordo com sua **abrangência geográfica**, conhecendo as características das redes **LAN (Local Area Network)** e **WAN (Wide Area Network)**, além da importância dos provedores de Internet (ISP) na comunicação entre redes.
+
+---
+
+# 1. Classificação das Redes
+
+As redes de computadores podem ser classificadas de acordo com a **área geográfica que abrangem**.
+
+Essa classificação ajuda a entender:
+
+- o tamanho da rede;
+- como os dispositivos se comunicam;
+- quais equipamentos são utilizados;
+- qual é o alcance da comunicação.
+
+As duas classificações mais utilizadas são:
+
+- **LAN (Local Area Network)** — Rede Local.
+- **WAN (Wide Area Network)** — Rede de Longa Distância ou Grande Abrangência.
+
+---
+
+# 2. Abrangência das Redes
+
+As redes podem variar desde uma pequena rede doméstica até a maior rede existente no mundo: **a Internet**.
+
+## Exemplos
+
+- Rede doméstica.
+- Rede residencial (Home Office).
+- Rede empresarial.
+- Rede de uma escola.
+- Rede de uma universidade.
+- Internet.
+
+Quanto maior a abrangência da rede, maior será sua complexidade.
+
+---
+
+# 3. Redes Domésticas
+
+As redes domésticas conectam dispositivos utilizados no dia a dia de uma residência.
+
+### Exemplos de dispositivos
+
+- Computadores;
+- Notebooks;
+- Smartphones;
+- Smart TVs;
+- Impressoras;
+- Videogames;
+- Dispositivos IoT (câmeras, lâmpadas inteligentes, assistentes virtuais etc.).
+
+Normalmente todos esses equipamentos compartilham:
+
+- Internet;
+- Arquivos;
+- Impressoras;
+- Serviços da rede local.
+
+---
+
+# 4. Redes SOHO (Small Office / Home Office)
+
+SOHO significa:
+
+> **Small Office / Home Office**
+>
+> (Pequeno Escritório / Escritório em Casa)
+
+São redes utilizadas por:
+
+- pequenos escritórios;
+- consultórios;
+- empresas de pequeno porte;
+- profissionais que trabalham em casa.
+
+Essas redes possuem características semelhantes às redes domésticas, porém costumam atender um número maior de usuários e equipamentos.
+
+---
+
+# 5. Rede Mundial
+
+A maior rede existente é a **Internet**.
+
+Ela conecta milhões de redes locais espalhadas pelo mundo.
+
+É importante diferenciar dois conceitos:
+
+## Internet
+
+É a infraestrutura mundial formada pela interligação de milhares de redes.
+
+## WWW (World Wide Web)
+
+A **World Wide Web (WWW)** é um dos serviços que utiliza a Internet.
+
+Ela corresponde ao conjunto de páginas e sites acessados pelos navegadores.
+
+### Importante
+
+A WWW **não é a Internet**.
+
+Ela é apenas um dos diversos serviços disponíveis na Internet.
+
+Outros serviços incluem:
+
+- E-mail;
+- FTP;
+- Jogos online;
+- Chamadas de vídeo;
+- Streaming;
+- Mensagens instantâneas.
+
+---
+
+# 6. LAN (Local Area Network)
+
+## Definição
+
+Uma **LAN** é uma rede que conecta dispositivos dentro de uma área geográfica limitada.
+
+Seu objetivo é permitir a comunicação rápida entre dispositivos próximos.
+
+---
+
+## Exemplos de LAN
+
+- Residências;
+- Escolas;
+- Escritórios;
+- Empresas;
+- Universidades;
+- Indústrias;
+- Campus.
+
+---
+
+## Características da LAN
+
+- Área geográfica limitada.
+- Alta velocidade de transmissão.
+- Baixa latência.
+- Administração geralmente feita por uma única pessoa ou organização.
+- Comunicação entre dispositivos próximos.
+
+---
+
+## Dispositivos encontrados em uma LAN
+
+### Hosts
+
+- Computadores;
+- Servidores;
+- Smartphones;
+- Impressoras.
+
+### Dispositivos intermediários
+
+- Switch;
+- Access Point;
+- Roteador (para acesso à Internet).
+
+---
+
+## Administração
+
+Em uma empresa:
+
+A LAN normalmente é administrada pela equipe de TI da organização.
+
+Em uma residência:
+
+A administração geralmente é feita pelo próprio proprietário da rede.
+
+---
+
+## Velocidade
+
+As redes LAN normalmente possuem altas velocidades.
+
+Exemplos:
+
+- 100 Mbps
+- 1 Gbps
+- 2,5 Gbps
+- 10 Gbps
+
+Como os dispositivos estão próximos, é possível utilizar velocidades elevadas com baixo custo.
+
+---
+
+# 7. WAN (Wide Area Network)
+
+## Definição
+
+Uma **WAN** é uma rede que conecta várias redes LAN distribuídas por grandes áreas geográficas.
+
+Em vez de conectar diretamente computadores, a WAN conecta **redes inteiras**.
+
+---
+
+## Exemplos
+
+- Internet.
+- Redes entre filiais de uma empresa.
+- Redes de operadoras de telecomunicações.
+
+---
+
+## Como uma LAN acessa uma WAN?
+
+O acesso ocorre através de um:
+
+- **ISP (Internet Service Provider)**
+
+ou seja,
+
+**Provedor de Serviços de Internet**.
+
+Exemplos conhecidos:
+
+- Claro;
+- Vivo;
+- TIM;
+- Oi.
+
+O provedor conecta a sua rede local à infraestrutura mundial da Internet.
+
+---
+
+# 8. ISP (Internet Service Provider)
+
+O ISP é a empresa responsável por fornecer acesso à Internet.
+
+Seu papel é:
+
+- conectar sua rede doméstica à Internet;
+- fornecer um endereço IP público;
+- encaminhar os dados para outras redes.
+
+Sem um ISP, uma rede LAN consegue funcionar internamente, mas não consegue acessar a Internet.
+
+---
+
+# 9. Características da WAN
+
+Uma WAN possui características diferentes de uma LAN.
+
+### Área geográfica
+
+Muito maior.
+
+Pode conectar cidades, estados, países e continentes.
+
+---
+
+### Velocidade
+
+Em geral, a velocidade disponível na WAN é menor que na LAN.
+
+Isso ocorre porque transmitir dados por longas distâncias exige uma infraestrutura muito mais complexa e cara.
+
+---
+
+### Custo
+
+Quanto maior a velocidade contratada na WAN, maior tende a ser o custo do serviço.
+
+---
+
+### Administração
+
+Normalmente é administrada por:
+
+- provedores de Internet;
+- operadoras de telecomunicações;
+- grandes empresas.
+
+---
+
+# 10. LAN x WAN em empresas
+
+Em uma empresa, grande parte da comunicação ocorre dentro da própria LAN.
+
+Por exemplo:
+
+- acesso ao servidor de arquivos;
+- impressão em rede;
+- sistemas internos;
+- banco de dados local.
+
+Esses acessos **não utilizam a Internet**, tornando a comunicação mais rápida e reduzindo o tráfego na WAN.
+
+A WAN é utilizada principalmente para:
+
+- acessar sites;
+- enviar e-mails externos;
+- utilizar serviços em nuvem;
+- conectar filiais;
+- acessar sistemas hospedados fora da empresa.
+
+---
+
+# 11. LAN x WAN em residências
+
+Em uma residência, a situação costuma ser diferente.
+
+Grande parte do tráfego é destinada à Internet.
+
+Exemplos:
+
+- YouTube;
+- Netflix;
+- Jogos online;
+- Redes sociais;
+- Navegação na Web.
+
+Por isso, o uso da WAN costuma ser muito maior do que em muitas redes corporativas.
+
+---
+
+# 12. O papel do Roteador
+
+O roteador é o dispositivo responsável por conectar a **LAN** à **WAN**.
+
+Ele recebe os dados da rede local e os encaminha para outras redes, como a Internet.
+
+Sem um roteador:
+
+- os dispositivos da LAN continuam se comunicando entre si;
+- porém, não conseguem acessar a Internet.
+
+---
+
+# Exemplo de comunicação
+
+```text
+Notebook
+     │
+ Wi-Fi
+     │
+Access Point
+     │
+Switch
+     │
+Roteador
+     │
+ISP (Provedor)
+     │
+Internet (WAN)
+     │
+Servidor
+```
+
+Nesse exemplo:
+
+- **Notebook** → Host.
+- **Access Point** → Conecta dispositivos Wi-Fi à LAN.
+- **Switch** → Interliga os dispositivos da LAN.
+- **Roteador** → Conecta a LAN à WAN.
+- **ISP** → Fornece acesso à Internet.
+- **Internet** → WAN.
+- **Servidor** → Host.
+
+---
+
+# Resumo da Aula
+
+## LAN (Local Area Network)
+
+- Rede local.
+- Área geográfica limitada.
+- Alta velocidade.
+- Administrada por uma única organização ou pessoa.
+- Utilizada em residências, empresas, escolas e universidades.
+
+---
+
+## WAN (Wide Area Network)
+
+- Rede de grande abrangência.
+- Conecta diversas LANs.
+- Utiliza provedores de Internet (ISP).
+- Maior custo de infraestrutura.
+- Velocidade geralmente menor que a da LAN.
+
+---
+
+## ISP
+
+- Empresa que fornece acesso à Internet.
+- Conecta a LAN à WAN.
+- Encaminha o tráfego para outras redes.
+
+---
+
+## Roteador
+
+- Conecta a rede local (LAN) à rede de longa distância (WAN).
+- Permite o acesso à Internet.
+
+---
+
+# Conceitos Importantes
+
+| Conceito | Definição |
+|----------|-----------|
+| **LAN** | Rede local utilizada em áreas geográficas limitadas. |
+| **WAN** | Rede de longa distância que conecta várias LANs. |
+| **ISP** | Empresa que fornece acesso à Internet. |
+| **SOHO** | Small Office / Home Office (Pequeno Escritório / Escritório em Casa). |
+| **WWW** | World Wide Web, conjunto de páginas e sites acessados pela Internet. |
+| **Internet** | Infraestrutura mundial que interliga milhares de redes. |
+| **Roteador** | Dispositivo que conecta a LAN à WAN. |
