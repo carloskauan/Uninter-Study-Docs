@@ -1,0 +1,8 @@
+## Rede lan basica packet tracer
+A basica e formada basicamante por e PCs cenctados a um servidor por meio de um switch
+
+Para estabelecer o caminho fisico: cabo UTP
+Conexões entre switchs: FO ou UTP
+Tipos de switch: L2 2960 e L3 3560
+SW genericos: permite a instalação de diversos tipos de interfaces
+
